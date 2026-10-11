@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Day 5 - Live Advice Generator</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            max-width: 500px;
+            margin: 80px auto;
+            padding: 0 20px;
+            text-align: center;
+            background-color: #f4f6f9;
+        }
+
+        .card{
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        h1{
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .advice-box{
+            font-size: 1.25rem;
+            font-style: italic;
+            color: #555;
+            min-height: 80px;
+            margin-bottom: 30px;
+            line-height: 1.5;
+        }
+
+        button{
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 1 rem;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        button:hover{
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1>Daily Advice</h1>
+        <div id="advice-display" class="advice-box">Click the button below to fetch advice...</div>
+        <button id="fetch-btn">Get New Advice</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
